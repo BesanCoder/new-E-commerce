@@ -1,0 +1,26 @@
+/* Style for the footer container */
+/* Footer CSS */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style for the footer content */
+.footer-content {
+    height: 100px;
+    overflow-y: auto;
+}
+
+/* Style for the left text */
+.footer-left {
+    float: left;
+}
+
+/* Style for the right text */
+.footer-right {
+    float: right;
+}
