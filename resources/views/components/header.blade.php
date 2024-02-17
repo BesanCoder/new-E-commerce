@@ -15,7 +15,6 @@
         </div>
         <div class="search">
         <button id="sidebarToggle" class="sidebar-toggle-btn"><i class="fas fa-bars"></i></button>
-            <input type="text" placeholder="Search..." class="search-input">
         </div>
         <div class="actions">
             <button class="action-btn"><i class="fas fa-envelope"></i><span class="action-text">Messages</span></button>

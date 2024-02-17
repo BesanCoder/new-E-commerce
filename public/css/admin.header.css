@@ -10,17 +10,11 @@
     padding: 10px 20px;
     display: flex;
     align-items: center;
+    
 }
 
 
 
-.search-input {
-    padding: 6px 10px;
-    border: none;
-    border-radius: 4px;
-    width: 150px;
-    font-size: 14px;
-}
 
 .search-btn {
     background: transparent;

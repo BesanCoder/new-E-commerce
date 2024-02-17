@@ -1,0 +1,164 @@
+        /* CSS for layout */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        .sc {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: #f2f2f2;
+            width: 250px;
+            padding: 20px;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+      .content-container {
+    margin-top: 20px; /* Add some space from the header and sidebar */
+}
+
+.container_search {
+    width: 100%; /* Make the search form fill the width of its container */
+    
+}
+
+.search-wrapper {
+    position: relative; /* Position the search icon relative to the input */
+}
+
+.container_search input[type="text"] {
+    padding: 10px 40px 10px 15px; /* Adjust padding to accommodate the icon */
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Adjust border-radius for a rounded look */
+    font-size: 16px;
+    width: calc(100% - 40px); 
+}
+
+.container_search i {
+    color: #888; 
+}
+
+/* admin.users.css */
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.user-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.user-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+.editable {
+    cursor: pointer;
+}
+
+.editable:hover {
+    background-color: #e2e2e2;
+}
+/* admin.users.css */
+
+/* Style for buttons inside the table */
+.user-table button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-table button.edit-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.user-table button.delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.user-table button:hover {
+    opacity: 0.8;
+}
+/* admin.users.css */
+
+/* Hover effect for table rows */
+.user-table tbody tr:hover {
+    background-color: #f5f5f5; /* Light gray */
+}
+
+/* Striped rows */
+.user-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Lighter gray */
+}
+
+/* Styling for table header */
+.user-table th {
+    background-color: #333; /* Dark gray */
+    color: white;
+    padding: 10px;
+}
+
+/* Border collapse */
+.user-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Padding and margin for buttons */
+.user-table button {
+    padding: 8px 16px;
+    margin: 4px;
+}
+
+/* Text alignment */
+.user-table th,
+.user-table td {
+    text-align: left;
+    padding: 8px;
+}
+
+        
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .header_sidebar_container {
+                flex-direction: column-reverse;
+            }
+            
+            .sidebar {
+                width: 100%;
+            }
+        }
+    

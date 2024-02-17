@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
+    
 </head>
 <body>
     <div class="sidebar">
@@ -18,7 +19,7 @@
         </div>
         <ul>
             <li>
-                <a href="#" class="active">
+                <a href="{{ route('admin.dashboard') }}" class="active">
                     <span class="icon"><i class="fas fa-home"></i></span>
                     <span class="item">Home</span>
                 </a>
@@ -26,13 +27,13 @@
             <li>
                 <a href="#">
                     <span class="icon"><i class="fas fa-desktop"></i></span>
-                    <span class="item">My Dashboard</span>
+                    <span class="item">Order Management</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ route('admin.users.index') }}">
                     <span class="icon"><i class="fas fa-user-friends"></i></span>
-                    <span class="item">People</span>
+                    <span class="item">Users</span>
                 </a>
             </li>
             <li>
@@ -54,20 +55,26 @@
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <span class="icon"><i class="fas fa-user-shield"></i></span>
-                    <span class="item">Admin</span>
-                </a>
-            </li>
+    <a href="{{ route('admin.settings') }}" >
+        <span class="icon"><i class="fas fa-cog"></i></span>
+        <span class="item">Settings</span>
+    </a>
+</li>
+
+
+
             <li>
-                <a href="#">
-                    <span class="icon"><i class="fas fa-cog"></i></span>
-                    <span class="item">Settings</span>
+            <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+                <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                    <span class="item" id="logoutSpan">Logout</span>
                 </a>
+
             </li>
         </ul>
     </div>
     
-
 </body>
 </html>

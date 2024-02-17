@@ -162,11 +162,11 @@
             type: 'line',
             data: salesData,
             options: {
-                responsive: false, // Disable responsiveness
+                responsive: false, 
                 scales: {
                     xAxes: [{
                         ticks: {
-                            maxTicksLimit: 10 // Limit to 10 ticks (adjust as needed)
+                            maxTicksLimit: 10 
                         }
                     }],
                     yAxes: [{
@@ -186,18 +186,18 @@
             type: 'line',
             data: revenueData,
             options: {
-                responsive: false, // Disable responsiveness
+                responsive: false, 
                 scales: {
                     xAxes: [{
                         ticks: {
-                            maxTicksLimit: 10 // Limit to 10 ticks (adjust as needed)
+                            maxTicksLimit: 10 
                         }
                     }],
                     yAxes: [{
                         ticks: {
                             beginAtZero: true,
                             min: 0,
-                            max: 10000 // Adjust max value as needed
+                            max: 10000 
                         }
                     }]
                 }
