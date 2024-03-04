@@ -1,0 +1,60 @@
+.content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+}
+
+.create-supplier-container {
+    width: auto; /* Fit content */
+    max-width: 80%; /* Set maximum width to 80% of the available space */
+    margin: 0 auto; /* Center the container horizontally */
+    background-color: #fff; /* White background */
+    padding: 30px; /* Increase padding for better spacing */
+    border-radius: 10px; /* Add some border radius for a softer look */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.create-supplier-container h2 {
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+}
+
+.create-supplier-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Medium gray text color */
+}
+
+.create-supplier-container input,
+.create-supplier-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition for input focus */
+}
+
+.create-supplier-container input:focus,
+.create-supplier-container textarea:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+}
+
+.create-supplier-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.create-supplier-btn:hover {
+    background-color: #45a049;
+}
